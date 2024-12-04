@@ -99,11 +99,12 @@ h1 {
 
 .icon-link {
     color: white;
-    transition: color 0.2s;
+    transition: all 0.2s ease;
 }
 
 .icon-link:hover {
     color: rgba(255, 255, 255, 0.7);
+    transform: scale(1.2);
 }
 
 .sr-only {
@@ -123,5 +124,22 @@ footer {
     padding: 1rem;
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.rain-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.raindrop {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: monospace;
+    user-select: none;
 }
 
